@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<LOKA School and Farm>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -386,13 +386,13 @@ body{font-family:var(--fB);background:var(--off);color:var(--ink);font-size:14px
 // ════════════════════════════════════════════════
 const DATA = {
   teachers:[
-    {id:'t1',name:'Mr. Rajesh Kumar',subject:'Mathematics',avatar:'RK',classes:['Class 3A','Class 4B','Class 5A']},
-    {id:'t2',name:'Ms. Anita Singh',subject:'English',avatar:'AS',classes:['Class 3A','Class 5A','Class 6A']},
-    {id:'t3',name:'Ms. Sunita Devi',subject:'EVS / Science',avatar:'SD',classes:['Class 3A','Class 4A','Class 4B']},
-    {id:'t4',name:'Mr. Ramesh Sharma',subject:'Hindi',avatar:'RS',classes:['Class 3A','Class 3B','Class 4A']},
-    {id:'t5',name:'Ms. Nidhi Kumari',subject:'Folk Art & Craft',avatar:'NK',classes:['Class 3A','Class 4A','Class 5A','Class 6A']},
-    {id:'t6',name:'Mr. Bikash Das',subject:'Music & Performing Arts',avatar:'BD',classes:['Class 3A','Class 4A','Class 5A']},
-    {id:'t7',name:'Mr. Suresh Yadav',subject:'Physical Education',avatar:'SY',classes:['Class 3A','Class 3B','Class 4A','Class 4B']},
+    {id:'t1',name:'Mr. Vikash Singh',subject:'Mathematics',avatar:'VS',classes:['Class 3A','Class 4B','Class 5A']},
+    {id:'t2',name:'Mr. Surya Suresh',subject:'English',avatar:'SS',classes:['Class 3A','Class 5A','Class 6A']},
+    {id:'t3',name:'Ms. Nisha Singh',subject:'EVS / Science',avatar:'NS',classes:['Class 3A','Class 4A','Class 4B']},
+    {id:'t4',name:'Ms. Abhilasha Singh',subject:'Hindi',avatar:'AS',classes:['Class 3A','Class 3B','Class 4A']},
+    {id:'t5',name:'Ms. Shilpi Kumari',subject:'Folk Art & Craft',avatar:'SK',classes:['Class 3A','Class 4A','Class 5A','Class 6A']},
+    {id:'t6',name:'Ms. Madhu Kumari',subject:'Music & Performing Arts',avatar:'MK',classes:['Class 3A','Class 4A','Class 5A']},
+    {id:'t7',name:'Mr. Sanatan Kumar',subject:'Physical Education',avatar:'SK',classes:['Class 3A','Class 3B','Class 4A','Class 4B']},
   ],
   students:[
     {id:'s1',name:'Aryan Mishra',class:'Class 3A',avatar:'AM',roll:1,progress:{Mathematics:82,English:90,EVS:75,Hindi:88,Art:95}},
@@ -461,7 +461,7 @@ let STATE = { role:null, user:null, tab:'dashboard', calMonth: new Date().getMon
 const ROLE_USERS = {
   student: DATA.students.map(s=>({id:s.id,name:s.name,class:s.class,avatar:s.avatar})),
   teacher: DATA.teachers.map(t=>({id:t.id,name:t.name,subject:t.subject,avatar:t.avatar})),
-  admin:   [{id:'a1',name:'Ms. Vandana Prasad',role:'Principal',avatar:'VP'},{id:'a2',name:'Mr. Deepak Ojha',role:'Vice Principal',avatar:'DO'}]
+  admin:   [{id:'a1',name:'Ms. Sanat Kumar',role:'Principal',avatar:'SK'},{id:'a2',name:'Mr. Surya Suresh',role:'Vice Principal',avatar:'SS'}]
 };
 
 function selectRole(r){
